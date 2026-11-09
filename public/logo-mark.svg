@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="UMI Apps">
+  <defs>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="0.38" stop-color="#6366f1"/>
+      <stop offset="0.7" stop-color="#ff7a59"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </linearGradient>
+    <radialGradient id="outerGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.7" stop-color="#ff8a3d" stop-opacity="0"/>
+      <stop offset="0.86" stop-color="#ff8a3d" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#050814"/>
+      <stop offset="0.38" stop-color="#0b1430"/>
+      <stop offset="0.7" stop-color="#1b2150"/>
+      <stop offset="1" stop-color="#3a2350"/>
+    </linearGradient>
+    <radialGradient id="horizon" cx="0.5" cy="0.62" r="0.62">
+      <stop offset="0" stop-color="#ffb45c" stop-opacity="0.5"/>
+      <stop offset="0.45" stop-color="#ff6b6b" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ff6b6b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.34" r="0.74">
+      <stop offset="0" stop-color="#fff8d6"/>
+      <stop offset="0.32" stop-color="#ffd166"/>
+      <stop offset="0.68" stop-color="#ff9a4d"/>
+      <stop offset="1" stop-color="#ff5e7a"/>
+    </radialGradient>
+    <radialGradient id="sunGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffd166" stop-opacity="0.5"/>
+      <stop offset="0.5" stop-color="#ff8a3d" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#ff8a3d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="peakBack" x1="0" y1="0" x2="0.24" y2="1">
+      <stop offset="0" stop-color="#8ff5e4"/>
+      <stop offset="0.48" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <linearGradient id="peakMid" x1="0" y1="0" x2="0.24" y2="1">
+      <stop offset="0" stop-color="#7dd3fc"/>
+      <stop offset="0.5" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="peakFront" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0" stop-color="#26345f"/>
+      <stop offset="0.55" stop-color="#0b1328"/>
+      <stop offset="1" stop-color="#05080f"/>
+    </linearGradient>
+    <linearGradient id="snow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="rocket" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="0.55" stop-color="#f3e8d2"/>
+      <stop offset="1" stop-color="#d9cbae"/>
+    </linearGradient>
+    <linearGradient id="fin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff8a5c"/>
+      <stop offset="1" stop-color="#f43f5e"/>
+    </linearGradient>
+    <linearGradient id="flameOuter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe29a"/>
+      <stop offset="0.5" stop-color="#ff9f43"/>
+      <stop offset="1" stop-color="#ff5e7a"/>
+    </linearGradient>
+    <linearGradient id="flameInner" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#ffd166"/>
+    </linearGradient>
+    <radialGradient id="gloss" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="0.5" cy="0.42" r="0.62">
+      <stop offset="0.68" stop-color="#03060f" stop-opacity="0"/>
+      <stop offset="1" stop-color="#03060f" stop-opacity="0.52"/>
+    </radialGradient>
+    <clipPath id="clip">
+      <circle cx="64" cy="64" r="58"/>
+    </clipPath>
+  </defs>
+
+  <circle cx="64" cy="64" r="62" fill="url(#outerGlow)"/>
+
+  <g clip-path="url(#clip)">
+    <circle cx="64" cy="64" r="58" fill="url(#sky)"/>
+    <circle cx="64" cy="78" r="58" fill="url(#horizon)"/>
+    <circle cx="64" cy="64" r="53" fill="none" stroke="#ffffff" stroke-opacity="0.05" stroke-width="1"/>
+
+    <g fill="#fdf6e3">
+      <circle cx="24" cy="30" r="1.2" opacity="0.85"/>
+      <circle cx="40" cy="18" r="0.8" opacity="0.6"/>
+      <circle cx="101" cy="24" r="1.1" opacity="0.8"/>
+      <circle cx="109" cy="44" r="0.7" opacity="0.55"/>
+      <circle cx="16" cy="48" r="0.8" opacity="0.5"/>
+      <path d="M80 18l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z" opacity="0.9"/>
+    </g>
+
+    <circle cx="64" cy="68" r="40" fill="url(#sunGlow)"/>
+    <circle cx="64" cy="68" r="22" fill="url(#sun)"/>
+    <circle cx="64" cy="68" r="23.2" fill="none" stroke="#ffe9b8" stroke-opacity="0.3" stroke-width="0.8"/>
+
+    <path d="M24 63C44 60 84 66 104 62" stroke="#070b18" stroke-width="2" stroke-linecap="round" opacity="0.18"/>
+    <path d="M38 72C54 70 76 74 92 71" stroke="#070b18" stroke-width="1.3" stroke-linecap="round" opacity="0.12"/>
+
+    <path d="M-6 94L18 60L32 72L52 34L66 62L78 44L94 68L110 50L134 94Z" fill="url(#peakBack)"/>
+    <path d="M52 34L44 46L48 44.3L52 47L56 44.3L60 46Z" fill="url(#snow)"/>
+    <path d="M110 50L104 59L107.5 57.5L110 60L112.5 57.5L116 59Z" fill="url(#snow)" opacity="0.9"/>
+    <path d="M52 36L40 52" stroke="#b8fff2" stroke-width="1" stroke-linecap="round" opacity="0.28"/>
+    <path d="M78 46L70 58" stroke="#b8fff2" stroke-width="0.8" stroke-linecap="round" opacity="0.18"/>
+
+    <path d="M-6 104L14 76L30 92L46 60L62 92L78 68L94 88L112 64L134 104Z" fill="url(#peakMid)" opacity="0.97"/>
+    <path d="M46 60L40 69L43.5 67.5L46 70L48.5 67.5L52 69Z" fill="#e8f4ff" opacity="0.88"/>
+    <path d="M46 62L34 82" stroke="#bfdbfe" stroke-width="0.8" stroke-linecap="round" opacity="0.24"/>
+
+    <path d="M-6 124L12 100L28 112L42 88L64 112L86 90L102 112L118 96L134 124Z" fill="url(#peakFront)"/>
+    <path d="M42 88L64 112" stroke="#8ff5e4" stroke-width="1" stroke-linecap="round" opacity="0.2"/>
+    <path d="M86 90L64 112" stroke="#93c5fd" stroke-width="1" stroke-linecap="round" opacity="0.16"/>
+
+    <g transform="translate(87 45)">
+      <g transform="rotate(38)">
+        <path d="M-4.2 10C-5.2 20 0 29 0 29C0 29 5.2 20 4.2 10Z" fill="url(#flameOuter)"/>
+        <path d="M-2.4 10C-2.8 16 0 22 0 22C0 22 2.8 16 2.4 10Z" fill="url(#flameInner)"/>
+        <path d="M-3.2 8L3.2 8L3.8 11.2L-3.8 11.2Z" fill="#b9ad96"/>
+        <path d="M0 -21C5.2 -12.6 6.8 -3 5.6 8L-5.6 8C-6.8 -3 -5.2 -12.6 0 -21Z" fill="url(#rocket)"/>
+        <path d="M-.4 -20C2.6 -13.6 4.2 -6 5 0L-1.6 -4.2Z" fill="#ffffff" opacity="0.62"/>
+        <path d="M-5.6 1L-11 10.5L-5.6 9.2Z" fill="url(#fin)"/>
+        <path d="M5.6 1L11 10.5L5.6 9.2Z" fill="url(#fin)"/>
+        <circle cx="0" cy="-3.4" r="3" fill="#0ea5b7" stroke="#f7ecd2" stroke-width="1.1"/>
+        <circle cx="-0.9" cy="-4.3" r="0.9" fill="#ffffff" opacity="0.9"/>
+      </g>
+    </g>
+
+    <ellipse cx="44" cy="26" rx="36" ry="18" fill="url(#gloss)" transform="rotate(-26 44 26)" opacity="0.5"/>
+    <circle cx="64" cy="64" r="58" fill="url(#vignette)"/>
+  </g>
+
+  <circle cx="64" cy="64" r="58.5" fill="none" stroke="#ffffff" stroke-opacity="0.1" stroke-width="1"/>
+  <circle cx="64" cy="64" r="60.5" fill="none" stroke="url(#ring)" stroke-width="2.6"/>
+</svg>
