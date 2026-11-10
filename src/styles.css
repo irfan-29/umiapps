@@ -73,12 +73,18 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
+  /* The hero's slowly spinning orbit expands its transformed bounding box by a
+     few pixels on every rotation. Clip it at the viewport so that never turns
+     into a horizontal page shift (notably on mobile Safari). */
+  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
+  overflow-x: clip;
   background: var(--bg);
   color: var(--body);
   font-family: var(--font-body);
@@ -320,8 +326,10 @@ button {
 .umi-logo__wordmark {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.26rem;
+  /* Both lines share one width: the column is as wide as U.M.I., and the
+     descriptor stretches to it. */
+  align-items: stretch;
+  gap: 0.24rem;
   line-height: 1;
 }
 
@@ -340,13 +348,20 @@ button {
 }
 
 .umi-logo__apps {
-  padding-left: 0.06rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* Tuck the first and last letters just inside U.M.I.'s edges; the letters
+     then share a slightly tighter span instead of touching the extremes. */
+  padding-inline: 8%;
   color: var(--muted);
   font-family: var(--font-body);
-  font-size: 0.54rem;
+  font-size: 0.6rem;
   font-weight: 800;
-  letter-spacing: 0.34em;
+  letter-spacing: 0;
   text-transform: uppercase;
+  position: relative;
+  right: 1px; 
 }
 
 @supports not ((background-clip: text) or (-webkit-background-clip: text)) {

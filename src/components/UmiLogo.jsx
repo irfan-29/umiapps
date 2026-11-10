@@ -400,9 +400,16 @@ export default function UmiLogo({
       </svg>
 
       {wordmark && (
-        <span className="umi-logo__wordmark">
+        // The descriptor is laid out as four separate letters so it can be
+        // justified edge-to-edge with the name above. The SVG carries the
+        // accessible label, so the visual wordmark itself is decorative.
+        <span className="umi-logo__wordmark" aria-hidden="true">
           <span className="umi-logo__name">U.M.I.</span>
-          <span className="umi-logo__apps">Apps</span>
+          <span className="umi-logo__apps">
+            {['A', 'P', 'P', 'S'].map((letter, index) => (
+              <span key={`${letter}${index}`}>{letter}</span>
+            ))}
+          </span>
         </span>
       )}
     </span>
